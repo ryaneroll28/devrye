@@ -1,4 +1,12 @@
-.row {
+/* Fonts for use
+
+font-family: 'Inter', sans-serif;
+font-family: 'Silkscreen', sans-serif;
+
+
+*/
+
+.bg-blue {
   background-image: url('./img/bgblue.jpg');
 }
 
@@ -53,6 +61,8 @@
 .ryeLogo {
   animation-name: logoDown;
   animation-duration: 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logoText {
@@ -68,4 +78,23 @@
   animation-name: blinking;
   animation-duration: 0.3s;
   animation-iteration-count: infinite;
+}
+
+.nav-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.socMed {
+  font-size: 30px;
+  padding-left: 16px;
+}
+
+.bg-second {
+  background-color: #2f221a;
 }
