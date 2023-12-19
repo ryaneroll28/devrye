@@ -61,8 +61,6 @@ font-family: 'Silkscreen', sans-serif;
 .ryeLogo {
   animation-name: logoDown;
   animation-duration: 1s;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .logoText {
@@ -97,4 +95,8 @@ font-family: 'Silkscreen', sans-serif;
 
 .bg-second {
   background-color: #2f221a;
+}
+
+.aboutTitle {
+  font-family: 'Silkscreen', sans-serif;
 }
