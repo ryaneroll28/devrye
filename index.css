@@ -12,6 +12,8 @@ font-family: 'Silkscreen', sans-serif;
 
 .bg-blue {
   background-image: url('./img/bgblue.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes logoDown {
@@ -144,4 +146,134 @@ font-family: 'Silkscreen', sans-serif;
     0 0 200px rgb(5, 49, 222);
   cursor: pointer;
   border-radius: 8px;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
 }
+
+/* Animation on front/back/Tech */
+
+.front-end,
+.back-end,
+.tech-stack {
+  animation: fade linear;
+  animation-timeline: view();
+  transition: 0.3s ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.abt-1 {
+  animation: leftSlide linear;
+  animation-timeline: view();
+}
+
+.abt-2 {
+  animation: rightSlide linear;
+  animation-timeline: view();
+}
+
+@keyframes leftSlide {
+  0% {
+    transform: translateX(-300px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightSlide {
+  0% {
+    transform: translateX(300px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Flipcard Picture */
+
+/* .theCard {
+  position: relative;
+}
+
+.theFront,
+.theBack {
+  position: absolute;
+} */
+
+/* CARD FLIP SECTION */
+
+.cardMain {
+  position: relative;
+  width: 80px;
+  height: 200px;
+  /* background-color: green; */
+}
+
+.cardSub {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  /* background-color: yellow; */
+}
+
+.cardSub:hover {
+  transform: rotateY(180deg);
+}
+
+.cardFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #ff282800;
+  color: #333;
+  text-align: center;
+  border-radius: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #ffffff08;
+  color: rgb(252, 252, 252);
+  transform: rotateY(180deg);
+  text-align: center;
+  border-radius: 20px;
+}
+
+cardMain > i {
+  font-size: 100px;
+}
+
+/* CARD FLIP SECTION */
