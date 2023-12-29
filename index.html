@@ -6,12 +6,9 @@
     <link rel="stylesheet" href="./index.css" />
 
     <!-- GoogleFonts Start -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Silkscreen:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Silkscreen&display=swap" rel="stylesheet">
     <!-- GoogleFonts End -->
 
     <!-- Font Awesome Start  -->
@@ -56,7 +53,7 @@
     </div>
 
     
-  <div class="bg-second container-fluid vh-100">
+  <div class="container-fluid vh-100"> <!--Main Start-->
         <!-- Navbar Start -->
 
     <nav id="navBar" class="navbar navbar-expand-lg bg-primary overflow-hidden">
@@ -79,22 +76,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-center"
+          class="collapse navbar-collapse justify-content-center "
           id="navbarNav"
         >
-          <ul class="navbar-nav">
+          <ul class="navMain navbar-nav bg-light px-3 border border-secondary">
             
-            <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT ME</a>
+            <li class="nav-item ">
+              <a class="nav-link text-secondary" href="#">ABOUT ME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" >PROJECTS</a>
+              <a class="nav-link text-secondary" href="#projects" >PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">TOOLS</a>
+              <a class="nav-link text-secondary" href="#tools">TOOLS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACTS</a>
+              <a class="nav-link text-secondary" href="#">CONTACTS</a>
             </li>
           </ul>
         </div>
@@ -111,13 +108,13 @@
     </nav>
     <!-- Navbar End -->
     <!-- Image Section start -->
-      <div class="row">
+      <div class="bg-second row"> <!--Main Row Start-->
         <div class="col-md-4 d-flex justify-content-center align-items-center ">
             <img class="mt-5 ms-5 border border-primary border-4 rounded-4 " width="250" src="./img/pp2cropped.jpg" alt="">
         </div>
     <!-- Image Section end -->
-    <!-- About Title Start -->
-        <div class="col-md-8">
+    
+        <div class="col-md-8"> <!-- About Start -->
           <div class="abt-1 d-flex justify-content-center align-items-center">
               <h1 class="aboutTitle text-primary mt-3 me-3">Hi</h1> <h1 class="aboutTitle text-primary mt-3">I'm Ryan!</h1>
           </div>
@@ -126,7 +123,7 @@
             <h1 class="aboutTitle text-center text-light">I'm a Full Stack Web Developer</h1>
           </div>
 
-          <div class="row d-flex justify-content-around text-light text-center d-grid gap-1 mt-3" >
+          <div class="row d-flex justify-content-around text-light text-center d-grid gap-1 mt-3" > <!-- Front/Back/Tech START with Details-->
 
             <div class="front-end col-md-3 border border-primary pb-2"> <div class="parTitle text-primary">Front-End Wizardy</div>
             <p class="parAbout">I specialize in front-end development, where I bring designs to life using HTML, CSS, and JavaScript. I'm obsessed with creating pixel-perfect, intuitive interfaces that provide seamless user experiences across all devices.
@@ -162,7 +159,7 @@
                   </div>
                   <div class="cardBack">
                     <p>Birthdate: August 28, 1990</p>
-                    <p>Age: 30 y/o</p>
+                    <p>Age: 33 y/o</p>
                     <p>Address: Silang, Cavite</p>
                     <p>Citizenship: Filipino</p>
                   </div>
@@ -179,7 +176,8 @@
                 <h3 class="text-light">Education</h3>
                 </div>
                 <div class="cardBack">
-                  Back of Card
+                  <p>Course: Bachelor of Science in Electronics Engineering</p>
+                  <p>School: Patria Sable Corpus College</p>
                 </div>
               </div>
             </div>
@@ -194,7 +192,9 @@
                 <h3 class="text-light">Hobbies</h3>
               </div>
               <div class="cardBack">
-                Back of Card
+                <p>I love Programming</p>
+                <p>I love Playing Mobile Games</p>
+                <p>I love Playing with Arduino</p>
               </div>
             </div>
           </div>
@@ -203,16 +203,148 @@
         </div>
           <!-- Card Flip Section -->
 
-        </div>
-        <!--  -->
-          
-        <!--  -->
-    <!-- About Title End -->
-      </div>
+        </div> <!-- Front/Back/Tech END with Details-->
+      </div> <!-- About End -->
+
+
+
+      <div class=" container-fluid bg-primary vh-100 vw-100"> <!-- PROJECTS START -->
+        <h3 id="projects" class="proj-tit text-center mt-3">My Projects!</h3>
+
+         <!--Carousel Section START-->
+         <div class="row d-md-block mt-md-5 d-flex justify-content-center align-items-center">
+
+          <div class="col-lg-6 offset-lg-3">
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/diceGame.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/eventmngmt.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/firstport.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/rlv3site.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+         <!--Carousel Section END-->
+
+         <!-- Sayings -->
+         <div class="say-container">
+              <h2 class="saYings text-light mt-3">It always seems impossible until it is done. </h2>
+         </div>
+         <!-- Sayings -->
+
+         
+
+        
+
+          <!-- <div class="proj-links row w-100">
+            <ul class="list-unstyled d-flex justify-content-around">
+              <li> <a class="text-warning col-sm-12 col-md-3" href="https://ryaneroll28.github.io/myportfolio/">My First Portfolio</a></li>
+              <li> <a class="text-warning col-sm-12 col-md-3" href="https://ryaneroll28.github.io/rldelightsv3/">RL Delights V3</a> </li>
+              <li> <a class="text-warning col-sm-12 col-md-3" href="https://ryaneroll28.github.io/eventmanagementsystem/">Event Management System</a> </li>
+              <li> <a class="text-warning col-sm-12 col-md-3" href="https://ryaneroll28.github.io/dicegame/">Dice Game</a> </li>
+            </ul>
+          </div> -->
+
+         
+
+      </div> <!-- PROJECTS END -->
+
+       <!-- Project Links Start -->
+        <div class=" d-flex justify-content-center text-center container-fluid align-items-center d-grid gap-2"> <!--border rounded-4 for checking borders-->  
+            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+              <a class="text-warning" href="https://ryaneroll28.github.io/myportfolio/">My First Portfolio</a>
+            </div>
+
+            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+              <a class="text-warning" href="https://ryaneroll28.github.io/rldelightsv3/">RL Delights V3</a>
+            </div>
+
+            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+              <a class="text-warning" href="https://ryaneroll28.github.io/eventmanagementsystem/">Event Management System</a>
+            </div>
+
+            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+              <a class="text-warning" href="https://ryaneroll28.github.io/dicegame/">Dice Game</a>
+            </div>
+        </div> <!-- Project Links End -->
      
+    </div> <!--Main Row Start-->
+
+     <!-- TOOLS Start -->
+
+     <div id="tools" class="tools-sec bg-light">
+          <h3 class="tools-title text-secondary text-center mt-5">These are my tools!</h3>
+          <div class="logos">
+            <div class="logos-slide">
+              <img width="150" src="./logos/HTML.png" alt="">
+              <img width="150" src="./logos/CSS3.png" alt="">
+              <img width="150" src="./logos/Javascript.png" alt="">
+              <img width="150" src="./logos/MongoDB.png" alt="">
+              <img width="150" src="./logos/NodeJS.png" alt="">
+              <img width="150" src="./logos/ExpressJS.png" alt="">
+              <img width="150" src="./logos/Heroku.png" alt="">
+              <img width="150" src="./logos/React.png" alt="">
+              <img width="150" src="./logos/Sublime.png" alt="">
+              <img width="150" src="./logos/Postman.png" alt="">
+              <img width="150" src="./logos/Git.png" alt="">
+              <img width="150" src="./logos/GitLab.png" alt="">
+            </div>
+            <div class="logos-slide">
+              <img width="150" src="./logos/HTML.png" alt="">
+              <img width="150" src="./logos/CSS3.png" alt="">
+              <img width="150" src="./logos/Javascript.png" alt="">
+              <img width="150" src="./logos/MongoDB.png" alt="">
+              <img width="150" src="./logos/NodeJS.png" alt="">
+              <img width="150" src="./logos/ExpressJS.png" alt="">
+              <img width="150" src="./logos/Heroku.png" alt="">
+              <img width="150" src="./logos/React.png" alt="">
+              <img width="150" src="./logos/Sublime.png" alt="">
+              <img width="150" src="./logos/Postman.png" alt="">
+              <img width="150" src="./logos/Git.png" alt="">
+              <img width="150" src="./logos/GitLab.png" alt="">
+            </div>
+        </div>
+      </div>
+
+      
     </div>
 
-  </div>
+
+
+
+
+
+
+
+
+
+    <!-- TOOLS End -->
+
+  </div> <!--Main End-->
 
     <!-- BS Script Start -->
     <script

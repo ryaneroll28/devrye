@@ -224,7 +224,7 @@ font-family: 'Silkscreen', sans-serif;
   position: absolute;
 } */
 
-/* CARD FLIP SECTION */
+/* CARD FLIP SECTION Start */
 
 .cardMain {
   position: relative;
@@ -262,18 +262,161 @@ font-family: 'Silkscreen', sans-serif;
 
 .cardBack {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   backface-visibility: hidden;
   background-color: #ffffff08;
   color: rgb(252, 252, 252);
   transform: rotateY(180deg);
-  text-align: center;
+  text-align: left;
   border-radius: 20px;
+  line-height: 0.5cm;
+  font-family: 'Inconsolata', monospace;
+}
+
+.cardBack > p {
+  margin-left: 2px;
+  margin-bottom: 0;
 }
 
 cardMain > i {
   font-size: 100px;
 }
 
-/* CARD FLIP SECTION */
+/* CARD FLIP SECTION End */
+
+/* NAV Underline Start */
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100;
+  left: 0;
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+
+.navMain {
+  border-radius: 28px;
+}
+
+/* PROJECTS SECTION START */
+
+#projects {
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 3rem;
+  animation: floatupdown 1s infinite ease-in-out alternate;
+}
+
+@keyframes floatupdown {
+  100% {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+}
+
+/* Sayings Start */
+
+.say-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saYings {
+  position: relative;
+  display: inline-block;
+  font-family: 'Inconsolata', monospace;
+}
+
+.saYings::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  background-color: #0d6efd; /* HEx code for Primary of Bootstrap*/
+  color: rgb(2, 7, 26);
+  padding: 2px;
+  width: 100%;
+  animation: typing 5s steps(44) infinite alternate;
+}
+
+@keyframes typing {
+  to {
+    width: 0%;
+  }
+}
+
+/* Saying end */
+
+/* Prject Links Start */
+
+/* .proj-links {
+  max-width: 100%;
+  max-height: 100%;
+} */
+
+.projs > a {
+  text-decoration: none;
+  color: #2f221a !important;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+}
+
+.projs {
+  width: 100%;
+  height: 8rem;
+  background-color: #33333343;
+}
+
+/* Prject Links End */
+
+/* TOOLS SECTION */
+.tools-sec {
+  height: 40vh;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 30s slide infinite linear;
+}
+
+.logos-slide img {
+  margin: 10px 40px;
+}
+
+.tools-title {
+  text-transform: capitalize;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+/* TOOLS SECTION */
