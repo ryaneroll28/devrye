@@ -97,6 +97,7 @@ font-family: 'Silkscreen', sans-serif;
 .socMed {
   font-size: 30px;
   padding-left: 16px;
+  -webkit-text-stroke: 2px blue;
 }
 
 .bg-second {
@@ -326,6 +327,16 @@ cardMain > i {
   }
 }
 
+@keyframes floatupdown2 {
+  100% {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+}
+
 /* Sayings Start */
 
 .say-container {
@@ -373,11 +384,11 @@ cardMain > i {
   font-weight: 700;
 }
 
-.projs {
-  width: 100%;
-  height: 8rem;
-  background-color: #33333343;
-}
+/* .projs {
+    width: 100%;
+    height: 8rem;
+    background-color: #33333343;
+  } */
 
 /* Prject Links End */
 
@@ -420,3 +431,31 @@ cardMain > i {
 }
 
 /* TOOLS SECTION */
+
+/* Animation in Hovering Menu */
+
+.nav-link:hover {
+  animation: floatupdown2 1s infinite ease-in-out alternate;
+}
+
+.contact-section {
+  background: rgba(0, 0, 0, 0.5) url(./img/contactsBG.svg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+}
+
+.form-sect {
+  background-color: rgba(252, 252, 252, 0.316);
+  margin-left: 1.5rem;
+  width: auto;
+}
+
+/* .footer-logo {
+} */
+
+.socMed-foot {
+  font-size: 2rem;
+  color: transparent;
+  -webkit-text-stroke: 2px blue;
+}

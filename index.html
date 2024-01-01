@@ -53,7 +53,7 @@
     </div>
 
     
-  <div class="container-fluid vh-100"> <!--Main Start-->
+  <div id="home" class="container-fluid vh-100"> <!--Main Start-->
         <!-- Navbar Start -->
 
     <nav id="navBar" class="navbar navbar-expand-lg bg-primary overflow-hidden">
@@ -91,7 +91,7 @@
               <a class="nav-link text-secondary" href="#tools">TOOLS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">CONTACTS</a>
+              <a class="nav-link text-secondary" href="#contactUs">CONTACTS</a>
             </li>
           </ul>
         </div>
@@ -208,7 +208,7 @@
 
 
 
-      <div class=" container-fluid bg-primary vh-100 vw-100"> <!-- PROJECTS START -->
+      <div class=" container-fluid bg-primary vh-100"> <!-- PROJECTS START -->
         <h3 id="projects" class="proj-tit text-center mt-3">My Projects!</h3>
 
          <!--Carousel Section START-->
@@ -256,10 +256,6 @@
          </div>
          <!-- Sayings -->
 
-         
-
-        
-
           <!-- <div class="proj-links row w-100">
             <ul class="list-unstyled d-flex justify-content-around">
               <li> <a class="text-warning col-sm-12 col-md-3" href="https://ryaneroll28.github.io/myportfolio/">My First Portfolio</a></li>
@@ -274,20 +270,20 @@
       </div> <!-- PROJECTS END -->
 
        <!-- Project Links Start -->
-        <div class=" d-flex justify-content-center text-center container-fluid align-items-center d-grid gap-2"> <!--border rounded-4 for checking borders-->  
-            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+        <div class=" row d-flex  justify-content-around text-center container-fluid align-items-center d-grid gap-2"> <!--border rounded-4 for checking borders-->  
+            <div class="projs col-md-2 p-md-5 d-flex justify-content-center align-items-center border rounded-4">
               <a class="text-warning" href="https://ryaneroll28.github.io/myportfolio/">My First Portfolio</a>
             </div>
 
-            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+            <div class="projs col-md-2 p-md-5 d-flex justify-content-center align-items-center border rounded-4">
               <a class="text-warning" href="https://ryaneroll28.github.io/rldelightsv3/">RL Delights V3</a>
             </div>
 
-            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
-              <a class="text-warning" href="https://ryaneroll28.github.io/eventmanagementsystem/">Event Management System</a>
+            <div class="projs col-md-2 p-md-5 d-flex justify-content-center align-items-center border rounded-4">
+              <a class="text-warning" href="https://ryaneroll28.github.io/eventmanagementsystem/">Event System</a>
             </div>
 
-            <div class="projs col-md-3 d-flex justify-content-center align-items-center rounded-4">
+            <div class="projs col-md-2 p-md-5 d-flex justify-content-center align-items-center border rounded-4">
               <a class="text-warning" href="https://ryaneroll28.github.io/dicegame/">Dice Game</a>
             </div>
         </div> <!-- Project Links End -->
@@ -295,8 +291,8 @@
     </div> <!--Main Row Start-->
 
      <!-- TOOLS Start -->
-
-     <div id="tools" class="tools-sec bg-light">
+    <div></div>
+     <div id="tools" class="container-fluid bg-light">
           <h3 class="tools-title text-secondary text-center mt-5">These are my tools!</h3>
           <div class="logos">
             <div class="logos-slide">
@@ -331,20 +327,127 @@
       </div>
 
       
-    </div>
+      </div>
+      <!-- TOOLS End -->
+
+      <!-- CONTACTS SECTION -->
+      <div id="contactUs" class="row">
+        <div class=" container-fluid vh-100 contact-section"> <!-- PROJECTS START -->
+          <h3 id="projects" class="proj-tit text-center my-3 text-light">Get in touch with us!</h3>
+          <div class="d-flex justify-content-around">
+            
+              <form action="" class="form-sect col-md-3">
+
+                <div class="form-row pt-3 col- text-center">
+
+                  <div class="col-12 px-2">
+                    <label for="firstName">First Name</label>
+                    <input type="text" class="form-control " placeholder="First name" id="firstName" required>
+                  </div>
+
+                  <div class="col-12 px-2">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control " placeholder="Last name" id="lastName" required>
+                  </div>
+
+                  <div class="col-12 px-2">
+                      <label for="Email">Email</label>
+                      <input type="email" class="form-control " placeholder="Enter Email" id="Email" required>
+                  </div>
+
+                  <div class="col-12 px-2">
+                      <label for="cNumber">Contact Number</label>
+                      <input type="number" class="form-control " placeholder="Enter your Number" id="cNumber" required>
+                  </div>
+
+                  <div class="col-12 px-2">
+                      <label for="subsSelect">Chooose your subscription</label>
+                      <select class="form-select" aria-label="Default select example" id="subsSelect">
+                        <option selected>Select Subscription</option>
+                        <option value="1">Front End Development</option>
+                        <option value="2">Back End Development</option>
+                        <option value="3">Full Stack Web Development</option>
+                      </select>
+                  </div>
+
+                  <div class="col-12 px-2">
+                    <div><label for="notes">Notes:</label></div>
+                      
+                      <!-- Creates a larger text input -->
+                      <textarea name="notes" id="notes" rows="5"></textarea>
+                  
+                  <div>
+                    <button class="my-3" type="submit">Send Inquiry</button>
+                  </div>
+
+                </div>
+              </form>
+              
+              </div>
+
+                  <div class="col-md-6 text-light">
+                    <h5>Address:</h5>
+                    <p>Mylene Ong Apartment A Purok 3 Brgy Carmen Silang Cavite Philippines</p>
+
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1149.7986149831117!2d121.03491622342041!3d14.227177467428133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDEzJzM3LjMiTiAxMjHCsDAyJzA2LjMiRQ!5e0!3m2!1sen!2sph!4v1704104536759!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                  </div>
+              </div> 
+        </div> 
+      </div>    
+       <!-- CONTACTS SECTION End-->
+
+       <!-- Footer -->
+
+       <div id="footer-section" class="row container-fluid bg-secondary">
+
+            <div class="col-3 d-flex justify-content-center">
+              <a href="#home"><img class="footer-logo py-3" width="100" src="./img/devrye.png" alt="logo"></a>
+            </div>
+
+            <div class="col-3 mt-3">
+                <p class="text-center"> <strong>Philippians 4:13</strong> </p>
+                <p class="text-center"><q>I can do all things through Christ which strengtheneth me.</q></p>
+            </div>
+
+            <div class="col-3 mt-3">
+              <p class="text-center"> <strong>Social Media</strong></p>
+              <ul class="d-flex justify-content-center list-unstyled d-grid gap-3 ">
+                <li>
+                  <a class="socMed-foot text-center" href="#"><i class="fa-brands fa-facebook" style="color: #ededed;"></i></i></a>
+                </li>
+                <li><a class="socMed-foot text-center" href="#"><i class="fa-brands fa-linkedin" style="color: #fcfcfd;"></i></a></li>
+                <li><a class="socMed-foot text-center" href="#"><i class="fa-brands fa-github" style="color: #fcfcfc;"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="col-3 d-flex justify-content-center align-items-center">
+              <h4>ZuittPH/Kalibrr</h4>
+            </div>
+
+            <div class="d-flex justify-content-center d-grid gap-3">
+              <p>&#169;Copyright</p> <p>|</p> <p>All rights reserved</p>
+            </div>
+
+      </div>
+
+
+
+       <!-- Footer -->
 
 
 
 
 
+      </div><!--Main End-->
+      
+      
+
+      
 
 
+     
 
-
-
-    <!-- TOOLS End -->
-
-  </div> <!--Main End-->
+   
 
     <!-- BS Script Start -->
     <script
