@@ -50,13 +50,13 @@
           ></a>
         </div>
       </div>
-    </div>
+    </div>  <!-- Landing End -->
 
     
   <div id="home" class="container-fluid vh-100"> <!--Main Start-->
-        <!-- Navbar Start -->
-
-    <nav id="navBar" class="navbar navbar-expand-lg bg-primary overflow-hidden">
+        
+<div class="row"> <!-- Navbar Start -->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-primary overflow-hidden"> 
       <div class="container-fluid">
         <div class="brand">
           <a class="navbar-brand" href="#"
@@ -105,8 +105,9 @@
         </ul>
         <!-- Social Media Link End -->
       </div>
-    </nav>
-    <!-- Navbar End -->
+    </nav> 
+  </div><!-- Navbar End -->
+    
     <!-- Image Section start -->
       <div class="bg-second row"> <!--Main Row Start-->
         <div class="col-md-4 d-flex justify-content-center align-items-center ">
@@ -207,7 +208,6 @@
       </div> <!-- About End -->
 
 
-
       <div class=" container-fluid bg-primary vh-100"> <!-- PROJECTS START -->
         <h3 id="projects" class="proj-tit text-center mt-3">My Projects!</h3>
 
@@ -291,8 +291,9 @@
     </div> <!--Main Row Start-->
 
      <!-- TOOLS Start -->
-    <div></div>
-     <div id="tools" class="container-fluid bg-light">
+     <div class="container-fluid">
+    <div class="row">
+     <div id="tools" class=" bg-light">
           <h3 class="tools-title text-secondary text-center mt-5">These are my tools!</h3>
           <div class="logos">
             <div class="logos-slide">
@@ -325,91 +326,96 @@
             </div>
         </div>
       </div>
+    </div>
+  </div><!-- TOOLS End -->
 
       
-      </div>
-      <!-- TOOLS End -->
 
-      <!-- CONTACTS SECTION -->
-      <div id="contactUs" class="row">
-        <div class=" container-fluid vh-100 contact-section"> <!-- PROJECTS START -->
-          <h3 id="projects" class="proj-tit text-center my-3 text-light">Get in touch with us!</h3>
-          <div class="d-flex justify-content-around">
-            
-              <form action="" class="form-sect col-md-3">
-
-                <div class="form-row pt-3 col- text-center">
-
-                  <div class="col-12 px-2">
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control " placeholder="First name" id="firstName" required>
-                  </div>
-
-                  <div class="col-12 px-2">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control " placeholder="Last name" id="lastName" required>
-                  </div>
-
-                  <div class="col-12 px-2">
-                      <label for="Email">Email</label>
-                      <input type="email" class="form-control " placeholder="Enter Email" id="Email" required>
-                  </div>
-
-                  <div class="col-12 px-2">
-                      <label for="cNumber">Contact Number</label>
-                      <input type="number" class="form-control " placeholder="Enter your Number" id="cNumber" required>
-                  </div>
-
-                  <div class="col-12 px-2">
-                      <label for="subsSelect">Chooose your subscription</label>
-                      <select class="form-select" aria-label="Default select example" id="subsSelect">
-                        <option selected>Select Subscription</option>
-                        <option value="1">Front End Development</option>
-                        <option value="2">Back End Development</option>
-                        <option value="3">Full Stack Web Development</option>
-                      </select>
-                  </div>
-
-                  <div class="col-12 px-2">
-                    <div><label for="notes">Notes:</label></div>
-                      
-                      <!-- Creates a larger text input -->
-                      <textarea name="notes" id="notes" rows="5"></textarea>
-                  
-                  <div>
-                    <button class="my-3" type="submit">Send Inquiry</button>
-                  </div>
-
-                </div>
-              </form>
+      <div class="container-fluid"><!-- CONTACTS SECTION -->
+        <div id="contactUs" class="row p-5 contact-section d-flex justify-content-around ">
+          <div><h3 id="projects" class="proj-tit text-center my-3 text-light">Get in touch with us!</h3></div>
+            <!-- <div class=" col-md-12 d-flex justify-content-around vh-100  py-3"> -->
               
-              </div>
+             
+              <div class="col-md-6 d-flex justify-content-center"> <!-- Form Div -->
+                
+                  <form action="" class="form-sect col-md-5">
 
-                  <div class="col-md-6 text-light">
-                    <h5>Address:</h5>
-                    <p>Mylene Ong Apartment A Purok 3 Brgy Carmen Silang Cavite Philippines</p>
+                    <div class="form-row pt-3 col- text-center">
 
-                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1149.7986149831117!2d121.03491622342041!3d14.227177467428133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDEzJzM3LjMiTiAxMjHCsDAyJzA2LjMiRQ!5e0!3m2!1sen!2sph!4v1704104536759!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                  </div>
-              </div> 
+                      <div class="col-12 px-2">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control " placeholder="First name" id="firstName" required>
+                      </div>
+
+                      <div class="col-12 px-2">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control " placeholder="Last name" id="lastName" required>
+                      </div>
+
+                      <div class="col-12 px-2">
+                          <label for="Email">Email</label>
+                          <input type="email" class="form-control " placeholder="Enter Email" id="Email" required>
+                      </div>
+
+                      <div class="col-12 px-2">
+                          <label for="cNumber">Contact Number</label>
+                          <input type="number" class="form-control " placeholder="Enter your Number" id="cNumber" required>
+                      </div>
+
+                      <div class="col-12 px-2">
+                          <label for="subsSelect">Chooose your subscription</label>
+                          <select class="form-select" aria-label="Default select example" id="subsSelect">
+                            <option selected>Select Subscription</option>
+                            <option value="1">Front End Development</option>
+                            <option value="2">Back End Development</option>
+                            <option value="3">Full Stack Web Development</option>
+                          </select>
+                      </div>
+
+                      <div class="col-12 px-2">
+                        <div><label for="notes">Notes:</label></div>
+                          
+                          <!-- Creates a larger text input -->
+                          <textarea name="notes" id="notes" rows="5"></textarea>
+                      
+                      <div>
+                        <button class="my-3" type="submit">Send Inquiry</button>
+                      </div>
+
+                    </div>
+                  </form>
+                  
+              </div> <!-- Form Div -->
+            </div>           
+                  <div class="col-md-6 text-light d-flex flex-column justify-content-center align-items-center"> <!-- Div for address and Map -->
+                        <div class=" w-50 d-flex justify-content-center">
+                          <h5>Address:</h5>
+                          <p>Mylene Ong Apartment A Purok 3 Brgy Carmen Silang Cavite Philippines</p>
+                        </div>
+                        
+                        <div class="">
+                          <p><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1149.7986149831117!2d121.03491622342041!3d14.227177467428133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDEzJzM3LjMiTiAxMjHCsDAyJzA2LjMiRQ!5e0!3m2!1sen!2sph!4v1704104536759!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                        </div>
+                        
+                  </div> <!-- Div for address and Map -->
+            <!-- </div>  -->
         </div> 
-      </div>    
-       <!-- CONTACTS SECTION End-->
-
-       <!-- Footer -->
-
-       <div id="footer-section" class="row container-fluid bg-secondary">
-
-            <div class="col-3 d-flex justify-content-center">
+    </div><!-- CONTACTS SECTION End-->
+       
+      <div class="container-fluid">
+       <div id="footer-section" class="row  bg-secondary "><!-- Footer -->
+          
+            <div class=" col-12 col-md-3 d-flex justify-content-center">
               <a href="#home"><img class="footer-logo py-3" width="100" src="./img/devrye.png" alt="logo"></a>
             </div>
 
-            <div class="col-3 mt-3">
+            <div class="col-12 col-md-3 mt-3">
                 <p class="text-center"> <strong>Philippians 4:13</strong> </p>
                 <p class="text-center"><q>I can do all things through Christ which strengtheneth me.</q></p>
             </div>
 
-            <div class="col-3 mt-3">
+            <div class="col-12 col-md-3 mt-3">
               <p class="text-center"> <strong>Social Media</strong></p>
               <ul class="d-flex justify-content-center list-unstyled d-grid gap-3 ">
                 <li>
@@ -420,34 +426,19 @@
               </ul>
             </div>
 
-            <div class="col-3 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-3 d-flex justify-content-center align-items-center">
               <h4>ZuittPH/Kalibrr</h4>
             </div>
+          
 
             <div class="d-flex justify-content-center d-grid gap-3">
               <p>&#169;Copyright</p> <p>|</p> <p>All rights reserved</p>
             </div>
+          
 
       </div>
-
-
-
-       <!-- Footer -->
-
-
-
-
-
-      </div><!--Main End-->
-      
-      
-
-      
-
-
-     
-
-   
+    </div><!-- Footer -->
+    </div><!--Main End-->
 
     <!-- BS Script Start -->
     <script
